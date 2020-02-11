@@ -10,12 +10,11 @@ pages:
     - type: generic
       id: first_page
       name: Welcome
-      content: Missing fundamental MUSHRA test       
+      content: The purpose of this test is to compare different audio clips to determine which has the best bass response.      
     - type: mushra
-      id: trial1
+      id: trial_1
       name: MUSHRA
-      content: This training shows how to use our user interface. Please perform the underlined instructions to proceed with the training session. Reminder: In a MUSHRA listening test you are asked to rate the Basic Audio Quality (BAQ) of each condition.<br/>Basic Audio Quality is a single and global attribute that is used to judge any and all detected differences between the reference and the condition.
-      showWaveform: true
+      content: Listen to the Cond sounds and compare them with the reference, then give them a score with the slider below. Only the slider for the sound you're currently playing can be moved. When you feel like you're done, press Next.
       enableLooping: true 
       reference: configs/resources/audio/ref_nofilter.wav
       createAnchor35: false
@@ -30,8 +29,8 @@ pages:
     - 
           # - random
           - type: mushra
-            id: trial_1
-            name: MUSHRA - 1
+            id: trial_2
+            name: MUSHRA - 2
             content: 
             enableLooping: true 
             reference: configs/resources/audio/ref_nofilter.wav
@@ -44,21 +43,6 @@ pages:
               C4: configs/resources/audio/erb_based_harmonic50hz_exp5end.wav
               C5: configs/resources/audio/known_nld.wav
               C6: configs/resources/audio/ref_filter.wav
-          - type: mushra
-            id: trial_2
-            name: MUSHRA - 2
-            content: 
-            enableLooping: true 
-            reference: configs/resources/audio/ref_nofilter.wav
-            createAnchor35: false
-            createAnchor70: false
-            stimuli:
-                C1: configs/resources/audio/concave2.wav
-                C2: configs/resources/audio/down_exp5.wav
-                C3: configs/resources/audio/down_exp10.wav
-                C4: configs/resources/audio/erb_based_harmonic50hz_exp5end.wav
-                C5: configs/resources/audio/known_nld.wav
-                C6: configs/resources/audio/ref_filter.wav
           - type: mushra
             id: trial_3
             name: MUSHRA - 3
@@ -73,10 +57,25 @@ pages:
                 C3: configs/resources/audio/down_exp10.wav
                 C4: configs/resources/audio/erb_based_harmonic50hz_exp5end.wav
                 C5: configs/resources/audio/known_nld.wav
-                C6: configs/resources/audio/ref_filter.wav     
+                C6: configs/resources/audio/ref_filter.wav
           - type: mushra
             id: trial_4
             name: MUSHRA - 4
+            content: 
+            enableLooping: true 
+            reference: configs/resources/audio/ref_nofilter.wav
+            createAnchor35: false
+            createAnchor70: false
+            stimuli:
+                C1: configs/resources/audio/concave2.wav
+                C2: configs/resources/audio/down_exp5.wav
+                C3: configs/resources/audio/down_exp10.wav
+                C4: configs/resources/audio/erb_based_harmonic50hz_exp5end.wav
+                C5: configs/resources/audio/known_nld.wav
+                C6: configs/resources/audio/ref_filter.wav     
+          - type: mushra
+            id: trial_5
+            name: MUSHRA - 5
             content: 
             enableLooping: true 
             reference: configs/resources/audio/ref_nofilter.wav
